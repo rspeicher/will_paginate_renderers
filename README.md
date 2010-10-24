@@ -12,7 +12,8 @@ in the future support any 3.0.x version once a stable version is released.
 The easiest way to make use of will_paginate_renderers is through
 [Bundler](http://gembundler.com/) by adding the following to your Gemfile:
 
-    gem 'will_paginate' gem 'will_paginate_renderers'
+    gem 'will_paginate'
+    gem 'will_paginate_renderers'
 
 Note that although `will_paginate_renderers` lists `will_paginate` as a
 dependency, you still need it in your Gemfile in order to make sure it's
