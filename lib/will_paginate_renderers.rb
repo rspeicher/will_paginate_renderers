@@ -17,6 +17,7 @@ require 'will_paginate/view_helpers/link_renderer'
 module WillPaginateRenderers
   autoload :Gmail,   'will_paginate_renderers/gmail'
   autoload :Twitter, 'will_paginate_renderers/twitter'
+  autoload :FullPageLinks, 'will_paginate_renderers/full_page_links'
 
   def self.pagination_options() @pagination_options; end
   def self.pagination_options=(value) @pagination_options = value; end
