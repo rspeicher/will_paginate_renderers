@@ -17,10 +17,16 @@ require 'will_paginate/view_helpers/link_renderer'
 module WillPaginateRenderers
   autoload :Gmail,   'will_paginate_renderers/gmail'
   autoload :Twitter, 'will_paginate_renderers/twitter'
+  autoload :SimplePag, 'will_paginate_renderers/simplepag'
 
   def self.pagination_options() @pagination_options; end
   def self.pagination_options=(value) @pagination_options = value; end
   self.pagination_options = {
+    :simplepag_newer_label  => "Newer",
+    :simplepag_older_label  => "Older",
+    :simplepag_newer_class  => "gmail_newer",
+    :simplepag_older_class  => "gmail_older",
+    
     :twitter_label => 'More',
     :twitter_class => 'twitter_pagination',
 
