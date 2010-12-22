@@ -24,8 +24,8 @@ module WillPaginateRenderers
   self.pagination_options = {
     :simplepag_newer_label  => "Newer",
     :simplepag_older_label  => "Older",
-    :simplepag_newer_class  => "gmail_newer",
-    :simplepag_older_class  => "gmail_older",
+    :simplepag_newer_class  => "simplepag_newer",
+    :simplepag_older_class  => "simplepag_older",
     
     :twitter_label => 'More',
     :twitter_class => 'twitter_pagination',
