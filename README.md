@@ -1,4 +1,4 @@
-# Will Paginate Renderers
+# Will Paginate Renderers ![](http://stillmaintained.com/tsigo/will_paginate_renderers.png)
 
 A collection of custom renderers for use with the
 [will_paginate](http://github.com/mislav/will_paginate) gem.
