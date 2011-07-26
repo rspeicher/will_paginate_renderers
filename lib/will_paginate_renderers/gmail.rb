@@ -46,19 +46,19 @@ module WillPaginateRenderers
     end
 
     def newer
-      return unless @collection.previous_page
-
-      previous_or_next_page(@collection.previous_page,
-                            WillPaginateRenderers.pagination_options[:gmail_newer_label],
-                            WillPaginateRenderers.pagination_options[:gmail_newer_class])
+      if previous_page = @collection.current_page > 1 && @collection.current_page - 1
+        previous_or_next_page(previous_page,
+                              WillPaginateRenderers.pagination_options[:gmail_newer_label],
+                              WillPaginateRenderers.pagination_options[:gmail_newer_class])
+      end
     end
 
     def older
-      return unless @collection.next_page
-
-      previous_or_next_page(@collection.next_page,
-                            WillPaginateRenderers.pagination_options[:gmail_older_label],
-                            WillPaginateRenderers.pagination_options[:gmail_older_class])
+      if next_page = @collection.current_page < @collection.total_pages && @collection.current_page + 1
+        previous_or_next_page(next_page,
+                              WillPaginateRenderers.pagination_options[:gmail_older_label],
+                              WillPaginateRenderers.pagination_options[:gmail_older_class])
+      end
     end
 
     def oldest

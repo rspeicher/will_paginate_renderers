@@ -24,11 +24,11 @@ module WillPaginateRenderers
     protected
 
     def next_page
-      return unless @collection.next_page
-
-      previous_or_next_page(@collection.next_page,
-                            WillPaginateRenderers.pagination_options[:twitter_label],
-                            WillPaginateRenderers.pagination_options[:twitter_class])
+      if next_page = @collection.current_page < @collection.total_pages && @collection.current_page + 1
+        previous_or_next_page(next_page,
+                              WillPaginateRenderers.pagination_options[:twitter_label],
+                              WillPaginateRenderers.pagination_options[:twitter_class])
+      end
     end
   end
 end
