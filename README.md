@@ -6,7 +6,7 @@ A collection of custom renderers for use with the
 ## Requirements
 
 will_paginate_renderers currently depends explicitly on [will_paginate
-3.0.pre2](https://rubygems.org/gems/will_paginate/versions/3.0.pre2), but will
+3.0.pre4](https://rubygems.org/gems/will_paginate/versions/3.0.pre4), but will
 in the future support any 3.0.x version once a stable version is released.
 
 The easiest way to make use of will_paginate_renderers is through

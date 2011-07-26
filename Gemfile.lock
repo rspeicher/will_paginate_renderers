@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    will_paginate_renderers (0.0.1)
-      will_paginate (= 3.0.pre2)
+    will_paginate_renderers (0.0.2)
+      will_paginate (= 3.0.pre4)
 
 GEM
   remote: http://rubygems.org/
@@ -19,7 +19,7 @@ GEM
     rspec-expectations (2.6.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.6.0)
-    will_paginate (3.0.pre2)
+    will_paginate (3.0.pre4)
     yard (0.6.1)
 
 PLATFORMS
