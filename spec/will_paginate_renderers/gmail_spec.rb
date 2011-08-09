@@ -3,18 +3,8 @@ require 'spec_helper'
 module WillPaginateRenderers
   describe Gmail do
     before do
-      @renderer = Gmail.new
+      @renderer = described_class.new
       @renderer.stubs(:url).returns('')
-    end
-
-    it "should raise error when unprepared" do
-      expect { @renderer.send :param_name }.to raise_error
-    end
-
-    it "should prepare with collection and options" do
-      prepare({}, :param_name => 'mypage')
-      @renderer.send(:current_page).should eql(1)
-      @renderer.send(:param_name).should eql('mypage')
     end
 
     it "should have pagination definition" do

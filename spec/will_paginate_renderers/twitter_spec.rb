@@ -6,16 +6,6 @@ module WillPaginateRenderers
       @renderer = Twitter.new
     end
 
-    it "should raise error when unprepared" do
-      expect { @renderer.send :param_name }.to raise_error
-    end
-
-    it "should prepare with collection and options" do
-      prepare({}, :param_name => 'mypage')
-      @renderer.send(:current_page).should eql(1)
-      @renderer.send(:param_name).should eql('mypage')
-    end
-
     it "should have pagination definition" do
       prepare({ :total_pages => 1 }, :page_links => true)
       @renderer.pagination.should eql([:next_page])
