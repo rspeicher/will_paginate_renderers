@@ -16,7 +16,8 @@ module WillPaginateRenderers
   #
   # * +twitter_label+: "More"
   # * +twitter_class+: +twitter_pagination+
-  class Twitter < ::WillPaginate::ViewHelpers::LinkRenderer
+  class Twitter < ::WillPaginate::ActionView::LinkRenderer
+
     def pagination
       [:next_page]
     end

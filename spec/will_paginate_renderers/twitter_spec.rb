@@ -16,11 +16,6 @@ module WillPaginateRenderers
       @renderer.send(:param_name).should eql('mypage')
     end
 
-    it "should have total_pages accessor" do
-      prepare :total_pages => 42
-      expect { @renderer.send(:total_pages).should eql(42) }.to_not have_deprecation
-    end
-
     it "should have pagination definition" do
       prepare({ :total_pages => 1 }, :page_links => true)
       @renderer.pagination.should eql([:next_page])

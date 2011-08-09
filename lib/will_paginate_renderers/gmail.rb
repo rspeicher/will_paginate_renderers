@@ -30,7 +30,8 @@ module WillPaginateRenderers
   # * +gmail_older_class+: "gmail_older"
   # * +gmail_oldest_class+: "gmail_oldest"
   # * +gmail:window_class+: "gmail_window"
-  class Gmail < ::WillPaginate::ViewHelpers::LinkRenderer
+  class Gmail < ::WillPaginate::ActionView::LinkRenderer
+
     def pagination
       [:newest, :newer, :window, :older, :oldest]
     end
