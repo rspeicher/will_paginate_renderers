@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    will_paginate_renderers (0.0.2)
+    will_paginate_renderers (0.0.3)
       will_paginate (~> 3.0)
 
 GEM
