@@ -69,6 +69,20 @@ You can change the label and CSS class of the "More" link.
 
     WillPaginateRenderers.pagination_options[:twitter_class] = 'custom_css'
 
+### Full page links
+
+**Introduction **:
+
+make for SEO friendly, speed up Search Engine spider to get all pages of list.
+
+** For example **:
+
+[http://www.xiangguo.org/beijing/fangs](http://www.xiangguo.org/beijing/fangs) See the html source code.
+
+**Usage**:
+
+    will_paginate(@posts, :renderer => WillPaginateRenderers::FullPageLinks)
+    
 ## Note on Patches/Pull Requests
 
 * Fork
