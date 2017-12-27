@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Robert Speicher']
   s.email       = ['rspeicher@gmail.com']
-  s.homepage    = "http://rubygems.org/gems/will_paginate_renderers"
+  s.homepage    = "https://rubygems.org/gems/will_paginate_renderers"
   s.summary     = %q{A collection of renderers for use with will_paginate}
   s.description = %q{A collection of renderers for use with will_paginate.}
 
