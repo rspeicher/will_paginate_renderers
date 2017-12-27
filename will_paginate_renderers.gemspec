@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
   s.add_dependency "will_paginate", "~> 3.0"
   s.add_development_dependency "mocha", "~> 0.9"
   s.add_development_dependency "rspec", "~> 2.6"
-  s.add_development_dependency "yard"
+  s.add_development_dependency "yard", "~> 0.9.11"
 end
